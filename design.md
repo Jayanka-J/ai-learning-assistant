@@ -3,6 +3,8 @@
 ## System Architecture.
 The system uses a **RAG-based (Retrieval-Augmented Generation)** architecture to inject local codebase context into LLM prompts.
 
+
+
 ## Architecture diagram of the proposed solution:
 
 ```mermaid
@@ -12,6 +14,7 @@ graph LR
     B --> D[LLM Engine]
     C --> B
     D --> B
+
 
 
 ## Tech Stack.
