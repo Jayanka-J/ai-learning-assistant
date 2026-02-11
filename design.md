@@ -3,6 +3,17 @@
 ## System Architecture.
 The system uses a **RAG-based (Retrieval-Augmented Generation)** architecture to inject local codebase context into LLM prompts.
 
+## Architecture diagram of the proposed solution:
+
+```mermaid
+graph LR
+    A[User Interface] --> B[AI Logic Layer]
+    B --> C[Vector Database]
+    B --> D[LLM Engine]
+    C --> B
+    D --> B
+
+
 ## Tech Stack.
 * **Frontend.** [React](https://react.dev) with [Tailwind CSS](https://tailwindcss.com) for a clean, distraction-free reading interface.
 * **Backend.** [Node.js](https://nodejs.org) (Fastify) for handling streaming LLM responses.
